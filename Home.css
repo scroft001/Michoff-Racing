@@ -1,0 +1,128 @@
+/* 
+    CSS for Michael Michoff Racing Home Page 
+    Steven Croft
+    May 26, 2015
+*/
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(218, 29, 84) 0%, rgb(218, 29, 84) 50%, rgb(36, 40, 74) 50%, rgb(36, 40, 74) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    height: 300px;
+    width: 75%;
+    border-radius: 10px;
+}
+
+
+
+ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+#linklist {
+   background-color: white;
+   opacity: 0.8;
+   font-size: 30px; 
+   font-family: sans-serif; 
+   padding: 0px;
+   margin-left: -10px;
+   margin-right: auto;
+   width: auto;
+}
+
+#linklist a {
+   color: black;
+   text-decoration: none; 
+   display: inline;
+}
+
+#linklist a:hover {
+   color: rgb(33, 59, 150); 
+   text-decoration: none;
+}
+
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100%;
+}
+
+#Welcome{
+    color: white;
+    opacity: 0.8;
+    position: fixed;
+    right: 0%;
+    width: 30%;
+    padding: 5px;
+    margin-right: 10%;
+}
+
+#Welcome h2{
+    background: -webkit-linear-gradient(rgb(70,70,70), royalblue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: cursive;
+}
+
+#Current{
+    color: white;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 10%;
+    width: 25%;
+    padding: 5px;
+    margin-left: 10%;
+    
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.3999996185303px; 
+}
+
+
+#Current h2{
+    color: white;
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.3999996185303px; 
+}
