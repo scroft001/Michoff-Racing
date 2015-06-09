@@ -6,14 +6,10 @@
 
 
 html{
-    height: 100%;
     width: 100%;
-}
-
-body{
     height: 100%;
     background: linear-gradient(to bottom, rgb(218, 29, 84) 0px, rgb(218, 29, 84) 165px, rgb(36, 40, 74) 165px, rgb(36, 40, 74));
-    background-size: cover;
+    background-size: 120%;
     background-repeat: no-repeat;
 }
 
@@ -87,10 +83,6 @@ li {
 #section{
     color: black;
     background-color: white;
-    /* background: -webkit-linear-gradient(rgb(0,0,0), rgb(30,30,30), rgb(50,50,50));
-    background: -o-linear-gradient(rgb(0,0,0), rgb(30,30,30), rgb(50,50,50));
-    background: -moz-linear-gradient(rgb(0,0,0), rgb(30,30,30), rgb(50,50,50));
-    background: linear-gradient(rgb(0,0,0), rgb(30,30,30), rgb(50,50,50)); */
     width: 50%;
     opacity: ;
     padding: 5px;
@@ -110,8 +102,20 @@ li {
 
 
 form{
-    color: white;
-    text-align: center;
+    color: black;
+    background-color: white;
+    width: 50%;
+    opacity: ;
     padding: 5px;
-    margin-top: 20%;
+    
+    -webkit-box-shadow: 10px 10px 16px 0px rgba(201,193,201,1);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(201,193,201,1);
+    box-shadow: 10px 10px 16px 0px rgba(201,193,201,1);
+    display: block;
+    position: relative;
+    top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 10px;
 }

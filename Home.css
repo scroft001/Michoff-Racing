@@ -5,11 +5,7 @@
 */
 
 html{
-    height: 100%;
     width: 100%;
-}
-
-body{
     height: 100%;
     background: linear-gradient(to bottom, rgb(218, 29, 84) 0%, rgb(218, 29, 84) 50%, rgb(36, 40, 74) 50%, rgb(36, 40, 74) 100%);
     background-size: cover;
