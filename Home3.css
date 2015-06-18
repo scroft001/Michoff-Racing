@@ -97,11 +97,21 @@ li {
 #USOpen{
     color: black;
     background-color: white;
+    width: 25%;
+    background-image: url(USOpen%20Transparent%20Logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    
 }
 
 #Can-Am{
     color: black;
     background-color: white;
+    width: 50%;
+    background-image: url(CanAm_Logo-400px.gif);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #Past{
