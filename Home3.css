@@ -110,17 +110,29 @@ li {
     height: 320px; /*Image height*/
     position: absolute;
     top: -325px; /* original position outside of the lsider*/
-    left: -100px;
+    left: -5px;
     resize: both;
     list-style: none;
 }
 
 #slider li.firstanimation{
-    animation: cycle 10s linear infinite;
+    animation: cycle 25s linear infinite;
 }
 
 #slider li.secondanimation{
     animation: cycletwo 25s linear infinite;
+}
+
+#slider li.thirdanimation{
+    animation: cyclethree 25s linear infinite;
+}
+
+#slider li.fourthanimation{
+    animation: cyclefour 25s linear infinite;
+}
+
+#slider li.fifthanimation{
+    animation: cyclefive 25s linear infinite;
 }
 
 @keyframes cycle{
@@ -135,7 +147,7 @@ li {
 }
 
 @keyframes cycletwo{
-     0%  { top: -325px; opacity: 0; } /* Original Position */
+   0%  { top: -325px; opacity: 0; } /* Original Position */
    16% { top: -325px; opacity: 0; }/* Starts moving after 16% to this position */
    20% { top: 0px; opacity: 1; }
    24% { top: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
@@ -145,11 +157,101 @@ li {
    100%{ top: -325px; opacity: 0; z-index: -1; }
 }
 
+@keyframes cyclethree {
+   0%  { top: -325px; opacity: 0; }
+   36% { top: -325px; opacity: 0; }
+   40% { top: 0px; opacity: 1; }
+   44% { top: 0px; opacity: 1; }
+   56% { top: 0px; opacity: 1; }
+   60% { top: 325px; opacity: 0; z-index: 0; }
+   61% { top: -325px; opacity: 0; z-index: -1; }
+   100%{ top: -325px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cyclefour {
+   0%  { top: -325px; opacity: 0; }
+   56% { top: -325px; opacity: 0; }
+   60% { top: 0px; opacity: 1; }
+   64% { top: 0px; opacity: 1; }
+   76% { top: 0px; opacity: 1; z-index: 0; }
+   80% { top: 325px; opacity: 0; z-index: 0; }
+   81% { top: -325px; opacity: 0; z-index: -1; }
+   100%{ top: -325px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cyclefive {
+   0%  { top: -325px; opacity: 0; }
+   76% { top: -325px; opacity: 0; }
+   80% { top: 0px; opacity: 1; }
+   84% { top: 0px; opacity: 1; }
+   96% { top: 0px; opacity: 1; z-index: 0; }
+   100%{ top: 325px; opacity: 0; z-index: 0; }
+}
+
+/*Progress Bar*/
+.progress-bar{
+    position: relative;
+    top: -5px;
+    width: 680px;
+    height: 5px;
+    background: #000;
+    animation: fullexpand 25s ease-out infinite;
+}
+
+/* animation bar */
+@keyframes fullexpand {
+   /* In these keyframes, the progress-bar is stationary */
+   0%, 20%, 40%, 60%, 80%, 100% { width: 0%; opacity: 0; }
+
+   /* In these keyframes, the progress-bar starts to come alive */
+   4%, 24%, 44%, 64%, 84% { width: 0%; opacity: 0.3; }
+
+   /* In these keyframes, the progress-bar moves forward for 3 seconds */
+   16%, 36%, 56%, 76%, 96% { width: 100%; opacity: 0.7; }
+
+   /* In these keyframes, the progress-bar has finished his path */
+   17%, 37%, 57%, 77%, 97% { width: 100%; opacity: 0.3; }
+
+   /* In these keyframes, the progress-bar will disappear and then resume the cycle */
+   18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
+}
+
+/*tool tips*/
+#slider .tooltip{
+    background: rgba(0,0,0,0.7);
+    width: 400px;
+    height: 60px;
+    position: relative;
+    bottom: 75px;
+    transition: all 0.3s ease-in-out;
+}
+
+#slider .tooltip h1{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 60px;
+    padding: 0 0 0 5px;
+}
+
+#slider li#first: hover .tooltip,
+#slider li#second: hover .tooltip,
+#slider li#third: hover .tooltip,
+#slider li#fourth: hover .tooltip,
+#slider li#fifth: hover .tooltip {
+   left: 0px;
+}
+
+#slider: hover li,
+#slider: hover .progress-bar {
+   animation-play-state: paused; /*Pause the animation when the user hovers over image*/
+}
+
 #Content{
     color: white;
     width: 75%;
     position: relative;
-    top: 250px;
+    top: 175px;
     margin-right: auto;
     margin-left: auto;
     border-spacing: 5px;
@@ -157,13 +259,12 @@ li {
 
 #SlideShow{
     color: black;
-    
 }
 
 #USOpen{
     color: black;
     background-color: white;
-    width: 25%;
+    width: 250px;
     background-image: url(USOpen%20Transparent%20Logo.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -174,7 +275,7 @@ li {
 #Can-Am{
     color: black;
     background-color: white;
-    width: 50%;
+    width: 400px;
     background-image: url(CanAm_Logo-400px.gif);
     background-repeat: no-repeat;
     background-position: center;
