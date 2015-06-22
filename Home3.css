@@ -79,6 +79,72 @@ li {
     width: 100%;
 }
 
+/* SLIDER STRUCTURE*/
+#slider{
+    background: #000;
+    border: 5px solid #eaeaea;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    height: 320px;
+    width: 680px;
+    margin: 40px auto 0;
+    overflow: visible;
+    position: relative;
+}
+
+/* HIDE ALL OUTSIDE OF THE SLIDER*/
+
+#mask{
+    overflow: hidden;
+    height: 320px;
+}
+
+/* IMAGE LIST */
+#slider ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#slider li{
+    width: 680px; /*Image width*/
+    height: 320px; /*Image height*/
+    position: absolute;
+    top: -325px; /* original position outside of the lsider*/
+    left: -100px;
+    resize: both;
+    list-style: none;
+}
+
+#slider li.firstanimation{
+    animation: cycle 10s linear infinite;
+}
+
+#slider li.secondanimation{
+    animation: cycletwo 25s linear infinite;
+}
+
+@keyframes cycle{
+    0% {top: 0px;} /* when you start the lisde, the first image is already visible*/
+    4% {top: 0px;} /* original position */
+    16% {top: 0px; opacity: 1; z-index: 0;} /* from 4% to 16% for 3 seconds the image is visible */
+    20% {top: 325px; opacity: 0; z-index: 0;} /*from 16 - 20 % for 1 sec and exit image*/
+    21% {top: -325px; opacity: 0; z-index: -1} /* return to original position*/
+    92% {top: -325px; opacity: 0; z-index: 0;}
+    96% {top: -325px; opacity: 0;} /* from 96 to 100% for one second enter image*/
+    100% {top: 0px; opacity: 1;}
+}
+
+@keyframes cycletwo{
+     0%  { top: -325px; opacity: 0; } /* Original Position */
+   16% { top: -325px; opacity: 0; }/* Starts moving after 16% to this position */
+   20% { top: 0px; opacity: 1; }
+   24% { top: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+   36% { top: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+   40% { top: 325px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+   41% { top: -325px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+   100%{ top: -325px; opacity: 0; z-index: -1; }
+}
+
 #Content{
     color: white;
     width: 75%;
@@ -91,7 +157,7 @@ li {
 
 #SlideShow{
     color: black;
-    background-color: white;
+    
 }
 
 #USOpen{

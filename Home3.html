@@ -40,7 +40,27 @@
         <table  id="Content">
             <tr id="Top">
                 <td id="SlideShow" colspan="3">
-                    slideshow
+                    <div class="container">
+                        <div id="content-slider">
+                            <div id="slider"> <!-- slider container (used to pause animation)-->
+                                <div id="mask"> <!-- mask (hides everything outside slider) -->
+                                    <ul>
+                                        <li id="first" class="firstanimation"> <!-- ID for tooltip and class for animation -->
+                                            <a href="#"><img src="MichaelMichoffBlackFistPump.jpg" alt="Michael Michoff 1st"/></a>
+                                            <div class="tooltip"><h1>Michael finishes first at</h1></div>
+                                        </li>
+                                        
+                                        <li id="second" class="secondanimation"> <!-- ID for tooltip and class for animation -->
+                                            <a href="#"><img src="Can-AmKarting3rdPlace.jpg" alt="Michael Michoff 3rd place"/></a>
+                                            <div class="tooltip"><h1>Michael on the podium for the Can-Am Karting Series</h1></div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div> <!-- end mask -->
+                                <div class="progress-bar"></div><!-- progress bar -->
+                            </div> <!-- end slider -->
+                        </div> <!-- end content-slider -->
+                    </div> <!-- end container -->
                 </td>
             </tr>
             
