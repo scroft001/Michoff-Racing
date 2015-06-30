@@ -249,7 +249,7 @@ li {
 
 #Content{
     color: white;
-    width: 75%;
+    width: 680px;
     position: relative;
     top: 175px;
     margin-right: auto;
@@ -264,7 +264,7 @@ li {
 #USOpen{
     color: black;
     background-color: white;
-    width: 250px;
+    width: 150px;
     background-image: url(USOpen%20Transparent%20Logo.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -272,17 +272,24 @@ li {
     
 }
 
+
 #Can-Am{
     color: black;
     background-color: white;
-    width: 400px;
+    width: 200px;
     background-image: url(CanAm_Logo-400px.gif);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     height: 250px;
 }
 
 #Past{
     color: black;
     background-color: white;
+    width: 150px;
+    background-image: url(MichaelMichoffYoungCrop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
