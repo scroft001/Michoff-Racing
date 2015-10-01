@@ -339,3 +339,10 @@ li {
 }
 
 .site-footer a{ text-decoration: none; color:rgb(36, 40, 74) }
+
+@media screen and (max-width = 500px) {
+/* applies only if the screen is 500px or smaller wide */
+    html{
+        background: red;
+    }
+}
