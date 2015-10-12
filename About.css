@@ -82,7 +82,7 @@ li {
 #About{
     color: black;
     background-color: white;
-    width: 50%;
+    width: 90%;
     opacity: ;
     padding: 5px;
     
@@ -101,7 +101,7 @@ li {
 #Team{
     color: black;
     background-color: white;
-    width: 50%;
+    width: 90%;
     opacity: ;
     padding: 5px;
     
@@ -125,7 +125,11 @@ li {
 #Kart{
     color: black;
     background-color: white;
-    width: 50%;
+    background-image: url("MichaelMichoffKartFrontSolo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 90%;
     opacity: ;
     padding: 5px;
     

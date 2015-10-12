@@ -292,16 +292,17 @@ li {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 250px;
 }
 
 #Worlds{
     color: black;
     background-color: white;
     opacity: .8;
-    height: 350px;
-    width: 300px;
+    height: 400px;
+    width: 500px;
     background-color: rgb(36, 40, 74);
-    background-image: url(WorldsCropped.jpg);
+    background-image: url(WorldsCropped2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
